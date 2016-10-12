@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F08C3DA844CF8CF6EEE251F /* Pods_Cdantang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A8EE1568621029A9BB39B6 /* Pods_Cdantang.framework */; };
 		BCB004841DAE6A8E006AA4AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB004831DAE6A8E006AA4AC /* AppDelegate.swift */; };
 		BCB004861DAE6A8F006AA4AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB004851DAE6A8F006AA4AC /* ViewController.swift */; };
 		BCB004891DAE6A8F006AA4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB004871DAE6A8F006AA4AC /* Main.storyboard */; };
 		BCB0048B1DAE6A8F006AA4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB0048A1DAE6A8F006AA4AC /* Assets.xcassets */; };
 		BCB0048E1DAE6A8F006AA4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0048C1DAE6A8F006AA4AC /* LaunchScreen.storyboard */; };
+		E223980F1DAE8EEC00B2601C /* PYYChannal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223980E1DAE8EEC00B2601C /* PYYChannal.swift */; };
+		E22398111DAE94EE00B2601C /* PYYHomeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22398101DAE94EE00B2601C /* PYYHomeItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2498A08B592381B82F69CE82 /* Pods-Cdantang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cdantang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cdantang/Pods-Cdantang.debug.xcconfig"; sourceTree = "<group>"; };
+		3633D9A1788399F14203079A /* Pods-Cdantang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cdantang.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cdantang/Pods-Cdantang.release.xcconfig"; sourceTree = "<group>"; };
+		B0A8EE1568621029A9BB39B6 /* Pods_Cdantang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cdantang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB004801DAE6A8E006AA4AC /* Cdantang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cdantang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB004831DAE6A8E006AA4AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB004851DAE6A8F006AA4AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		BCB0048A1DAE6A8F006AA4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB0048D1DAE6A8F006AA4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB0048F1DAE6A8F006AA4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E223980E1DAE8EEC00B2601C /* PYYChannal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PYYChannal.swift; sourceTree = "<group>"; };
+		E22398101DAE94EE00B2601C /* PYYHomeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PYYHomeItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F08C3DA844CF8CF6EEE251F /* Pods_Cdantang.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22A25BC2F97B51F47EE5B7ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0A8EE1568621029A9BB39B6 /* Pods_Cdantang.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCB004771DAE6A8E006AA4AC = {
 			isa = PBXGroup;
 			children = (
 				BCB004821DAE6A8E006AA4AC /* Cdantang */,
 				BCB004811DAE6A8E006AA4AC /* Products */,
+				FDF5CB7753BF8E7841894B50 /* Pods */,
+				22A25BC2F97B51F47EE5B7ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,113 @@
 		BCB004821DAE6A8E006AA4AC /* Cdantang */ = {
 			isa = PBXGroup;
 			children = (
-				BCB004831DAE6A8E006AA4AC /* AppDelegate.swift */,
-				BCB004851DAE6A8F006AA4AC /* ViewController.swift */,
-				BCB004871DAE6A8F006AA4AC /* Main.storyboard */,
+				BCB004951DAE715E006AA4AC /* Classes */,
 				BCB0048A1DAE6A8F006AA4AC /* Assets.xcassets */,
+			);
+			path = Cdantang;
+			sourceTree = "<group>";
+		};
+		BCB004951DAE715E006AA4AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BCB004971DAE71E8006AA4AC /* Classify */,
+				BCB004981DAE71FE006AA4AC /* DanTang */,
+				BCB0049A1DAE7226006AA4AC /* Main */,
+				BCB0049C1DAE726D006AA4AC /* Product */,
+				BCB0049B1DAE722E006AA4AC /* Me */,
+				BCB004991DAE7213006AA4AC /* Login&Register */,
+				BCB004961DAE71D5006AA4AC /* Others */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BCB004961DAE71D5006AA4AC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BCB004851DAE6A8F006AA4AC /* ViewController.swift */,
+				BCB004831DAE6A8E006AA4AC /* AppDelegate.swift */,
+				BCB004871DAE6A8F006AA4AC /* Main.storyboard */,
 				BCB0048C1DAE6A8F006AA4AC /* LaunchScreen.storyboard */,
 				BCB0048F1DAE6A8F006AA4AC /* Info.plist */,
 			);
-			path = Cdantang;
+			name = Others;
+			sourceTree = "<group>";
+		};
+		BCB004971DAE71E8006AA4AC /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classify;
+			sourceTree = "<group>";
+		};
+		BCB004981DAE71FE006AA4AC /* DanTang */ = {
+			isa = PBXGroup;
+			children = (
+				BCB0049D1DAE7380006AA4AC /* Controller */,
+				BCB0049E1DAE7391006AA4AC /* Model */,
+				BCB0049F1DAE739F006AA4AC /* View */,
+			);
+			name = DanTang;
+			sourceTree = "<group>";
+		};
+		BCB004991DAE7213006AA4AC /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Login&Register";
+			sourceTree = "<group>";
+		};
+		BCB0049A1DAE7226006AA4AC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		BCB0049B1DAE722E006AA4AC /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		BCB0049C1DAE726D006AA4AC /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Product;
+			sourceTree = "<group>";
+		};
+		BCB0049D1DAE7380006AA4AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BCB0049E1DAE7391006AA4AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E223980E1DAE8EEC00B2601C /* PYYChannal.swift */,
+				E22398101DAE94EE00B2601C /* PYYHomeItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BCB0049F1DAE739F006AA4AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FDF5CB7753BF8E7841894B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2498A08B592381B82F69CE82 /* Pods-Cdantang.debug.xcconfig */,
+				3633D9A1788399F14203079A /* Pods-Cdantang.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB004921DAE6A8F006AA4AC /* Build configuration list for PBXNativeTarget "Cdantang" */;
 			buildPhases = (
+				94E8D81D78BB263F57944FDF /* [CP] Check Pods Manifest.lock */,
 				BCB0047C1DAE6A8E006AA4AC /* Sources */,
 				BCB0047D1DAE6A8E006AA4AC /* Frameworks */,
 				BCB0047E1DAE6A8E006AA4AC /* Resources */,
+				2EDCCE69E0C2B840ADBE1046 /* [CP] Embed Pods Frameworks */,
+				EB2EDE5D80CCDBB955EA4E95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +251,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EDCCE69E0C2B840ADBE1046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cdantang/Pods-Cdantang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E8D81D78BB263F57944FDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB2EDE5D80CCDBB955EA4E95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cdantang/Pods-Cdantang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCB0047C1DAE6A8E006AA4AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BCB004861DAE6A8F006AA4AC /* ViewController.swift in Sources */,
+				E223980F1DAE8EEC00B2601C /* PYYChannal.swift in Sources */,
+				E22398111DAE94EE00B2601C /* PYYHomeItem.swift in Sources */,
 				BCB004841DAE6A8E006AA4AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +420,7 @@
 		};
 		BCB004931DAE6A8F006AA4AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2498A08B592381B82F69CE82 /* Pods-Cdantang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cdantang/Info.plist;
@@ -260,6 +432,7 @@
 		};
 		BCB004941DAE6A8F006AA4AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3633D9A1788399F14203079A /* Pods-Cdantang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Cdantang/Info.plist;
@@ -288,6 +461,7 @@
 				BCB004941DAE6A8F006AA4AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
